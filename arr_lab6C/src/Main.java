@@ -1,5 +1,20 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String[] names = new String[10];
+        names[0]="Ahmed";
+        names[1]="Maryam";
+        names[2]="Abdulla";
+        names[3]="Younis";
+        names[4]="Saeed";
+        names[5]="Zahra";
+        names[6]="Latifa";
+    }
+
+    public static String[] addName(String[] names){
+
+        Scanner get = new Scanner(System.in);
+
+        return names;
     }
 }
