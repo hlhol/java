@@ -15,6 +15,14 @@ public class Main {
 
         Scanner get = new Scanner(System.in);
 
+        for(int i = 0; i< names.length; i++){
+            if(names[i] == null){
+                System.out.println("Add a student name");
+            }
+        }
+
+
+
         return names;
     }
 }
