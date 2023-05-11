@@ -26,12 +26,24 @@ public class Main {
     }
 
     public static String[] deleteItem(String[] names, String name){
+        String temp = null;
+        String sub;
 
-        if(names[0] !=null){
+        for(int i =0; i< names.length; i++){
+                System.out.println(names[i]);
+        }
+        System.out.println("all");
 
+        for(int i =0; i< names.length; i++){
+            if(name == names[i]){
+                name = temp;
+                System.out.println(names[i]);
+            }
         }
 
+        for(int j=0; j< names.length; j++){
 
+        }
 
         return names;
     }
