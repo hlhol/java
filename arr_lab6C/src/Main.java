@@ -16,7 +16,9 @@ public class Main {
         Scanner get = new Scanner(System.in);
         int i = 0;
         String resp;
-
+        while(i<names.length && names[i] != null){
+            i++;
+        }
 
         if (i< names.length){
             do {
@@ -31,9 +33,6 @@ public class Main {
                 System.out.println("Array full");
             }
             System.out.println("Updated Array");
-            for (int j =0; i<j; j++){
-                System.out.println(names[j]);
-            }
 
         }else{
             System.out.println("Array full");
