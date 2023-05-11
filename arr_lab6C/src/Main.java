@@ -16,9 +16,7 @@ public class Main {
         Scanner get = new Scanner(System.in);
         int i = 0;
         String resp;
-        while(i<names.length && names[i] != null){
-            i++;
-        }
+
 
         if (i< names.length){
             do {
