@@ -6,7 +6,6 @@ public class Main {
 
 
     public static int findFirst(int[] vector, int value){
-
         boolean cond = false;
 
         //start for loop
@@ -17,19 +16,13 @@ public class Main {
                 //re-write the value
                 value = i;
 
-
             }
         }
         if(!cond){
             //re-write value to -1 if we can't find value in array
             value = -1;
+
         }
-
-
-
-
-
-
 
         return value;
     }
