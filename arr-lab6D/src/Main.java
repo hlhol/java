@@ -2,7 +2,33 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(findFirst(new int[]{10,20,30,50,40,30}, 50));
 
+        String word = "Philippe";
+
     }
+
+    public static char [] decompose(String word) {
+        char[] res = new char [word.length()];
+
+
+
+
+        return res;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     public static int findFirst(int[] vector, int value){
@@ -16,7 +42,7 @@ public class Main {
 
         //start for loop
         for(int i = 0; i< vector.length; i++){
-            //in this for loop there is a if statment to check if there is a value in array
+            //in this for loop there is an if statment to check if there is a value in array
             if(value == vector[i]){
                 cond = true; // we change the value of bollen to true for start if statment in out of loop
                 //re-write the value
