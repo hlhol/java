@@ -26,23 +26,25 @@ public class Main {
     }
 
     public static String[] deleteItem(String[] names, String name) {
+        boolean isNameFound = false;
         String temp = null;
         String sub;
         for (int j = 0; j < names.length; j++) {
             if (names[j] == name) {
-                System.out.println("Philippe was deleted\n" + "Updated Array");
+                isNameFound = true;
+                System.out.println(name + " was deleted\n" + "Updated Array");
                 for (int i = 0; i < names.length; i++) {
-
                     if (names[i] == name) {
                         names[i] = temp;
                     }
-
-
                     if (names[i] != null) {
                         System.out.println(names[i]);
                     }
                 }
             }
+        }
+        if (!isNameFound) {
+            System.out.println(name + " was not found");
         }
         return names;
     }
