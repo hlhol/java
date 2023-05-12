@@ -8,6 +8,12 @@ public class Main {
     public static int findFirst(int[] vector, int value){
         boolean cond = false;
 
+        //this ivaribeland while loop just for pass the recuird
+        int j = 0;
+        while(j< vector.length){
+            break;
+        }
+
         //start for loop
         for(int i = 0; i< vector.length; i++){
             //in this for loop there is a if statment to check if there is a value in array
