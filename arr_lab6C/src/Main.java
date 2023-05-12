@@ -21,14 +21,14 @@ public class Main {
         names[6]="Latifa";
         names[7]="Philippe";
         names[8]="Osama";
-        deleteItem(names, "Philippe");
+        deleteItem(names, "Zahra");
 
     }
 
     public static String[] deleteItem(String[] names, String name) {
         boolean isNameFound = false;
         String temp = null;
-        String sub;
+
         for (int j = 0; j < names.length; j++) {
             if (names[j] == name) {
                 isNameFound = true;
