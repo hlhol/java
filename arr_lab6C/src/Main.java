@@ -30,7 +30,7 @@ public class Main {
         String sub;
         for (int j = 0; j < names.length; j++) {
             if (names[j] == name) {
-
+                System.out.println("Philippe was deleted\n" + "Updated Array");
                 for (int i = 0; i < names.length; i++) {
 
                     if (names[i] == name) {
@@ -42,9 +42,6 @@ public class Main {
                         System.out.println(names[i]);
                     }
                 }
-                System.out.println("Philippe was deleted\n" + "Updated Array");
-            }else{
-                System.out.println("Philippe was not found");
             }
         }
         return names;
