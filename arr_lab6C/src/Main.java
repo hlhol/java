@@ -25,26 +25,28 @@ public class Main {
 
     }
 
-    public static String[] deleteItem(String[] names, String name){
+    public static String[] deleteItem(String[] names, String name) {
         String temp = null;
         String sub;
+        for (int j = 0; j < names.length; j++) {
+            if (names[j] == name) {
 
-        for(int i =0; i< names.length; i++){
-                System.out.println(names[i]);
-        }
-        System.out.println("all");
+                for (int i = 0; i < names.length; i++) {
 
-        for(int i =0; i< names.length; i++){
-            if(name == names[i]){
-                name = temp;
-                System.out.println(names[i]);
+                    if (names[i] == name) {
+                        names[i] = temp;
+                    }
+
+
+                    if (names[i] != null) {
+                        System.out.println(names[i]);
+                    }
+                }
+                System.out.println("Philippe was deleted\n" + "Updated Array");
+            }else{
+                System.out.println("Philippe was not found");
             }
         }
-
-        for(int j=0; j< names.length; j++){
-
-        }
-
         return names;
     }
 
@@ -65,8 +67,7 @@ public class Main {
 
 
 
-
-
+/*
     public static String[] addName(String[] names) {
         Scanner get = new Scanner(System.in);
         int i = 0;
@@ -100,6 +101,6 @@ public class Main {
         }
 
         return names;
-    }
+    }*/
 
 }
