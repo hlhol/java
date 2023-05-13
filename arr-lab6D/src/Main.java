@@ -46,16 +46,16 @@ public class Main {
         return count;
     }
 
-    public static char [] decompose(String word) {
+    public static char [] decomposeString(String word) {
+
         char[] res = new char [word.length()];
 
         for(int i = 0; i< word.length();i++){
             res[i] = word.charAt(i);
         }
-        System.out.println("The word \""+word+"\" decomposes as "+ Arrays.toString(decompose(word)));
+
         return res;
     }
-
 
 
 
