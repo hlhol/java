@@ -1,17 +1,32 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(findFirst(new int[]{10,20,30,50,40,30}, 50));
 
         String word = "Philippe";
+        decompose(word);
+    }
 
+    public static int occurrences(int num, int[] arr) {
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == num) {
+                count++;
+            }
+        }
+
+        return count;
     }
 
     public static char [] decompose(String word) {
         char[] res = new char [word.length()];
 
-
-
-
+        for(int i = 0; i< word.length();i++){
+            res[i] = word.charAt(i);
+        }
+        System.out.println("The word \""+word+"\" decomposes as "+ Arrays.toString(decompose(word)));
         return res;
     }
 
