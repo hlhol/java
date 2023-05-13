@@ -7,22 +7,26 @@ public class Main {
         String word = "Philippe";
         decompose(word);
 
+        int[] numberss = {1,2,3,4,5};
+        System.out.println("Average of "+Arrays.toString(numberss)+" is "+average(numberss));
+        average(numberss);
     }
 
-    public static double average(int []) {
+    public static double average(int []numberss ) {
+        //create a double verible
+        double total = 0;
 
-        
 
-
-
+        //start for loop to to plus the number in array to total
+        for(int i = 0; i<numberss.length ;i++){
+            total = total + numberss[i];
+        }
+        //to get averege you dvide total with  length of array
+        double avg = total/ numberss.length;
 
         //return the averege
-        return average();
+        return avg;
     }
-
-
-
-
 
 
 
