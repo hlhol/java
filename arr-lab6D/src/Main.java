@@ -9,6 +9,24 @@ public class Main {
 
     }
 
+    public static double average(int []) {
+
+        
+
+
+
+
+        //return the averege
+        return average();
+    }
+
+
+
+
+
+
+
+
     public static int occurrences(int num, int[] arr) {
         //create a counter with name count to count the repeataion
         int count = 0;
