@@ -6,12 +6,16 @@ public class Main {
 
         String word = "Philippe";
         decompose(word);
+
     }
 
     public static int occurrences(int num, int[] arr) {
+        //create a counter with name count to count the repeataion
         int count = 0;
 
+        //start a for loop to plus the count of number
         for (int i = 0; i < arr.length; i++) {
+            //if the number  ==  the number of array plus the count
             if (arr[i] == num) {
                 count++;
             }
