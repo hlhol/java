@@ -10,20 +10,42 @@ public class test {
         File folder = new File(path);
 
         if(!folder.exists()){
-            System.out.println("Folder does not exist, creating it");
+            System.out.println("Folder does not exist, creating it" );
             folder.mkdir();
         }
 
-        System.out.println("Content of folder before creating new file");
+        System.out.println("");
+        System.out.println("Content of folder before creating new file" );
         File[] files = folder.listFiles();
         if (files == null || files.length == 0) {
-            System.out.println("Folder is empty");
-        } else {
+            System.out.println("Folder is empty"+ "\n");
+            File newFile = new File(folder, "newfile.txt");
+            newFile.createNewFile();
+            System.out.println("\nCreating new file\n");
 
-            for (int i = 0; i< files.length; i++){
-                
+            System.out.println("Content of folder after creating new file" );
+            for (String fileName : folder.list()){
+                System.out.println(fileName);
             }
 
+
+
+        } else {
+
+
+
+            for (String fileName : folder.list()){
+                System.out.println(fileName);
+            }
+
+            File newFile = new File(folder, "newfile.txt");
+            newFile.createNewFile();
+            System.out.println("\nCreating new file\n");
+
+            System.out.println("Content of folder after creating new file" );
+            for (String fileName : folder.list()){
+                System.out.println(fileName);
+            }
         }
 
         }
@@ -31,4 +53,3 @@ public class test {
 
 
     }
-}
